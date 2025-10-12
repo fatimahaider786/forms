@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>JS formula</h1>
+  <script>
+
+    let radius = prompt("Enter radius of circle")
+    radius = Number(radius)
+
+    // formulas
+    let diameter = 2 * radius
+    let circumference = 2 * 3.14 * radius
+    let area = 3.14 * radius * radius
+
+    console.log(diameter)
+    console.log(circumference)
+    console.log(area)
+
+    // conditions for area
+    if (area > 100) {
+      console.log("Large Circle")
+    }
+    else if (area > 50) {
+      console.log("Medium Circle")
+    }
+    else {
+      console.log("Small Circle")
+    }
+
+    // conditions for circumference
+    if (circumference > 60) {
+      console.log("Big circumference")
+    }
+    else if (circumference > 30) {
+      console.log("Normal circumference")
+    }
+    else {
+      console.log("Small circumference")
+    }
+
+    // conditions for diameter
+    if (diameter > 15) {
+      console.log("Big diameter")
+    }
+    else if (diameter > 7) {
+      console.log("Medium diameter")
+    }
+    else {
+      console.log("Small diameter")
+    }
+
+    // tiangle 
+    let base = prompt(" enter your base")
+    base = Number(base)
+    let height = prompt("enter your height")
+    height = Number(height)
+    // formula
+    let Area = base * height / 2
+    console.log(Area)
+    // condition for area
+    if (area > 100) {
+      alert("large tiangle")
+    } else if (area > 50) {
+      alert("smale triangle")
+    }
+    // rectangle
+    let length = prompt(" Enter your length")
+    let width = prompt("Enter your width")
+    length = Number(length)
+    widht = Number(width)
+    // formula
+      Area = length * width
+     let perimeter = 2 * (length + width)
+
+    console.log(Area)
+    console.log(perimeter)
+
+    // condition  for area
+    if(area < 100){
+      alert("small area")
+    }else if (area > 100){
+      alert("small area")
+    }
+    // condition for perimeter
+    if(perimeter > 200){
+      alert("large perimeter")
+    }else if (perimeter < 100){
+      alert ("small perimeter")
+    }
+
+  </script>
+</body>
+
+</html>
