@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Percentage Calculator</title>
+</head>
+<body>
+  <button onclick="sayHello()">Click me and Check Game</button>
+
+  <form onsubmit="calculatePercentage(); return false">
+    <input
+      type="number"
+      id="ObtMarks"
+      name="ObtMarks"
+      placeholder="Enter your Obt Marks"
+    />
+    <input
+      type="number"
+      name="totalMarks"
+      id="totalMarks"
+      placeholder="Enter your total Marks"
+    />
+
+    <button type="submit">Calculate</button>
+  </form>
+   <div id="result"></div>
+  <script>
+    function sayHello() {
+      document.write("I am from sayHello. How are you?");
+    }
+
+    function calculatePercentage() {
+      const ObtMarksRef = document.getElementById("ObtMarks");
+      const totalMarksRef = document.getElementById("totalMarks");
+    
+
+      const ObtMarks = Number(ObtMarksRef.value);
+      const totalMarks = Number(totalMarksRef.value);
+
+
+      const percentage = (ObtMarks / totalMarks) * 100;
+      console.log(percentage)
+      const resultDiv = document.getElementById("result")
+
+      resultDiv.innerText= `your percentage is ${percentage}%`
+    }
+  </script>
+</body>
+</html>
