@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Pathagorus Calculator</h1>
+
+
+    <form onsubmit="calculatec();return false">
+        <input type="number" name="a" id="a" placeholder="enter your base" />
+        <input type="number" name="b" id="b" placeholder="enter your height" />
+        <button type="submit">calculate</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function calculatec() {
+
+            const aRef = document.getElementById("a")
+            const bRef = document.getElementById("b")
+
+            const a = Number(aRef.value)
+            const b = Number(bRef.value)
+
+            const c = Math.sqrt((a ** 2) + (b ** 2))
+            console.log(c)
+            const resultDiv=document.getElementById("result")
+            resultDiv.innerText=`your hyotheneus is ${c}`
+
+            if (c > 100){
+                alert("this is large hypothenus")
+            } else if (c < 70){
+                alert("this is medium hyptheneus")
+            }else{
+                alert("this is small hypotheneus")
+            }
+        }
+    </script>
+</body>
+</html>
