@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Area of triangel</h1>
+    <form onsubmit="calculatearea(); return false">
+        <input type="number" name="length" id="length" placeholder="enter your length"/>
+        <input type="number" name="width" id="width" placeholder="enter your width"/>
+        <button type="submit">save</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function calculatearea(){
+            const lengthRef=document.getElementById("length")
+            const widthRef=document.getElementById("width")
+
+            const length=Number(lengthRef.value) 
+            const width=Number(widthRef.value) 
+
+            const area= 2 * (length+width)
+            console.log(area)
+            const resultDiv=document.getElementById("result")
+            resultDiv.innerText=`your area is ${area}`
+
+            // condition use
+            if(area > 100){
+                alert("this is large rectangel")
+            } else if(area <70){
+                alert("this is medium rectangel")
+            } else {
+                alert("this is small rectangel")
+            }
+        }
+    </script>
+</body>
+</html>
