@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>login & sign up</h1>
+
+    <h4>login form</h4>
+    <form onsubmit="calculatelogin();return false">
+        <input type="text" name="loginEmail" id="loginEmail" placeholder="Enter Email" />
+        <input type="text" name="loginPassword" id="loginPassword" placeholder="Enter Password" />
+        <button type="submit">login</button>
+    </form>
+
+    <h3>sign up form</h3>
+    <form onsubmit="calculatesignup();return false">
+        <input type="text" name="signupEmail" id="signupEmail" placeholder="Enter email" />
+        <input type="text" name="signupPassword" id="signupPassword" placeholder="Enter Password" />
+        <button type="submit">Signup</button>
+    </form>
+    <script>
+        let  savedEmail =""
+        let  savedPassword=""
+        
+        function calculatelogin() {
+            const loginEmailRef = document.getElementById("loginEmail")
+            const loginPasswordRef = document.getElementById("loginPassword")
+
+            const email=loginEmailRef.value
+            const password=loginPasswordRef.value
+
+
+            if (email === savedEmail && password === savedPassword) {
+                alert("🎉 Login successful!");
+            } else {
+                alert("❌ Incorrect email or password!");
+                }
+            }
+                
+            function calculatesignup() {
+                const signupEmailRef = document.getElementById("signupEmail")
+                const signupPasswordRef = document.getElementById("signupPassword")
+
+            const email=signupEmailRef.value
+            const password=signupPasswordRef.value
+
+                if (signupEmailRef.value && signupPasswordRef.value) {
+                    savedEmail = email; 
+                    savedPassword =password;
+                    alert("🎉 Signup successful!");
+               } else {
+                    alert("❌ Please fill all fields!");
+                }
+            }
+        
+    </script>
+</body>
+</html>
