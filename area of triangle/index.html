@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>area of triangle</h1>
+    <form onsubmit="calculatearea(); return false">
+
+        <input type="number" name="base" id="base" placeholder="base" />
+        <input type="number" name="height" id="height" placeholder="height" />
+        <button type="submit">save</button>
+
+    </form>
+    <div id="result"></div>
+    <script>
+        function calculatearea() {
+            const baseRef = document.getElementById("base")
+            const heightRef = document.getElementById("height")
+
+            const base = Number(baseRef.value)
+            const height = Number(heightRef.value)
+
+            const area = 1 / 2 * base * height
+            console.log(area)
+            const resultDiv = document.getElementById("result")
+            resultDiv.innerText = `your area is ${area}`
+            
+            if (area > 100) {
+                alert("This is a large triangle")
+            } else if (area < 70) {
+                alert("This is a small triangle")
+            } else {
+                alert("This is a medium triangle")
+            }
+        }
+
+    </script>
+</body>
+
+</html>
