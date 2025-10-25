@@ -28,8 +28,8 @@
             const currentdateRef= document.getElementById("currentdate")
             const birthdateRef= document.getElementById("birthdate")
 
-         const currentdate = new Date(document.getElementById("currentdate").value)
-         const birthdate = new Date(document.getElementById("birthdate").value)
+         const currentdate = new Date(currentdateRef.value)
+         const birthdate = new Date(birthdateRef.value)
 
          const diff = currentdate - birthdate;
 
