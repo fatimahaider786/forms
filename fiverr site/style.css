@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #242424;
+}
+
+
+.nav {
+    background-color: #242424; 
+    color: white;
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    padding: 0 40px; 
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+ }
+
+.logo{
+    width: 130px; 
+    display: flex;
+    align-items: center;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.span-center {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0; 
+    margin-left: 50px; 
+    margin-right: 50px; 
+    font-size: 15px;
+}
+.span-center:hover{
+    cursor: pointer;
+}
+.span-right{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 0;
+    margin: 20px;
+    margin-right: 50px;
+    font-size: 15px;
+}
+.span-right:hover{
+    cursor: pointer;
+}
+.schedule{
+    background: linear-gradient(to right, #ff6a00, #ff006e); 
+    color: white;
+    padding: 6px 12px;
+    border-radius: 80px; 
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.signup{
+    background: white;
+    color: black;
+    padding: 8px 16px;
+    border: 5px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+.signup:hover{
+    background-color: #666;
+}
+.icon{
+    font-size: 20px;
+    margin-right: 30px;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.line{
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 80px 100px;
+    background-color: white;
+    min-height: 700px;
+    margin-bottom: 0;
+}
+
+.hero-content{
+    max-width: 50%;
+    padding-right: 50px;
+}
+.hero-content h1{
+    font-size: 44px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+}
+.hero-content p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px; 
+}
+.cta-buttons-container{ 
+    display: flex;
+    gap: 20px;
+}
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px; 
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.primary-button{
+    background-color: #6a40a8;
+    color: white;
+    border: none;
+}
+.primary-button:hover{
+    background-color: #553386;
+}
+
+.secondary-button{
+    background-color: transparent;
+    color: #6a40a8;
+    border: 1px solid #6a40a8;
+}
+.secondary-button:hover{
+    background-color: #f0f0f0;
+}
+.hero-image-container{ 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: -50px; 
+    margin-top: 50px;
+}
+.mobile-mockup-image {
+    height: 400px;
+    width :600px;
+    box-shadow: none;
+    margin-top: -60px;
+    position: relative;
+    border: none;
+}
+.client-demand{
+    padding:10px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-top: -100px;
+margin-bottom: 0;
+}
+.client-demand h2{
+    font-size:40px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+.client-visuals{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.vedio1,.vedio2,.vedio3{
+   display: flex;
+   position: relative;
+   border-radius: 10px;
+   height: 220px;
+}
+.features-section{
+    padding: 80px 100px;
+    background-color: white;
+}
+.sub-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.features-image-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.feature-mockup{
+    width: 22%;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.feature-mockup:hover{
+    cursor: pointer;
+}
+.feature-mockup img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+.feature-mockup h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.feature-mockup p{
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
