@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+@media print {
+    .container {
+        color: red;
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width :769px) {
+    .container {
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (min-width :800px) {
+    h1 {
+        display: none;
+    }
+}
+/* tablet or laptop */
+@media screen and (min-width:769px) and (max-width:1279) {
+    .container {
+        font-size: larger;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .container {
+        font-size: larger;
+        font-weight: bolder;
+        font-style: italic;
+    }
+}
+
+.container {
+    animation: colorchanging 3s 6;
+}
+
+@keyframes colorchanging {
+    from {
+        background-color: blueviolet;
+    }
+
+    to {
+        background-color: pink;
+    }
+}
