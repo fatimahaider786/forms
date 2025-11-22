@@ -1,0 +1,70 @@
+.fantsy{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250, 124, 7);
+}
+@media screen  and (min-width: 400px){
+  h1{
+    background-color: blueviolet;
+}  
+}
+
+/* ...smart phone..... */
+@media screen and (min-width:50px) and (max-width:480px){
+    .fantsy{
+        font-weight: bolder;
+        font-style: italic;
+        background-color: brown;
+    }
+}
+/* ...tablet or larger smart phone ....*/
+@media screen and (min-width:481px) and (max-width:768px){
+    .fantsy{
+        font-weight: bolder;
+        font-style: oblique;
+        background-color:pink;
+    }
+}
+/* ....laptop or larger desktop..... */
+@media screen and (min-width:769px) and (max-width:1279px){
+    .fantsy{
+        font-weight: bolder;
+        font-style: oblique;
+        background-color:greenyellow;
+    }
+}
+/* ... larger desktop....*/
+@media screen and (min-width:1280px){
+    .fantsy{
+        font-weight: bolder;
+        font-style: initial;
+        background-color:green;
+        font-size: larger;
+    }
+}
+
+/* .....print nedia .....*/
+@media print {
+    .fantsy {
+        color: orangered;
+        background-color: palegreen;
+    }
+    h1{
+        background-color: palevioletred;
+    }
+}
+/* ....animation.... */
+.fantsy {
+    animation: colorchanging 2s infinite;
+}
+
+@keyframes colorchanging {
+    from {
+        background-color: salmon;
+    }
+
+    to {
+        background-color: seagreen;
+    }
+}
+
